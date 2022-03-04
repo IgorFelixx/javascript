@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Países</title>
+</head>
+<body>
+    <h1>Sistemas de Países</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="resultado()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function resultado () {
+            var sla = window.document.querySelector('input#txtp')
+            var res = window.document.querySelector('div#res')
+            var país = String('sla.value')
+            res.innerHTML = `Seus país atual é  <strong>${país}</strong> </p>`
+            if (páis != 'Brasil') {
+                res.innerHTML +=`Você é Estrangeiro`
+            } else {
+                res.innerHTML +=`Você é Brasileiro`
+            }
+    </script>
+</body>
+</html>
